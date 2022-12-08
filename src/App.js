@@ -5,6 +5,7 @@ import Sim from "./Components/Zurag/Screen Shot 2022-12-06 at 17.04.44.png";
 import Bill from "./Components/Zurag/Bill.png";
 import Handset from "./Components/Zurag/Handset.png";
 import Action from "./Components/Actions/actions";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
@@ -65,7 +66,7 @@ function App() {
       <div className="News">
         <div className="news">
           <div className="news-heading">
-            <h4>News</h4>
+            <h2>News</h2>
             <div className="news-heading-right">
               <p>learn more </p>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -73,18 +74,127 @@ function App() {
               </svg>
             </div>
           </div>
-          <div className="Medee"></div>
+          <div className="news-news">
+            <Medee
+              img={"https://stat.mobicom.mn//resources/menu/2319-7144567.jpeg"}
+              text={"Нэгж, датанд ДААЛГАЯ"}
+              date={"2022.12.8"}
+            />
+            <Medee
+              img={
+                "https://stat.mobicom.mn//resources/menu/2311-1059287632.png"
+              }
+              text={"STARS БҮҮҮР ГОЁ БОЛЛОО!"}
+              date={"2022.12.5"}
+            />
+            <Medee
+              img={
+                "https://stat.mobicom.mn//resources/menu/2307-442373483.jpeg"
+              }
+              text={"WE:MAKE FREE CALLS TO YOUR FAMILY AND"}
+              date={"2022.12.02"}
+            />
+            <Medee
+              img={
+                "https://stat.mobicom.mn//resources/menu/2305-1736838029.jpeg"
+              }
+              text={"STARS: ЖИЛИЙН ЭРХТЭЙ КАРТ ХУДАЛДААНД ГАР"}
+              date={"2022.11.28"}
+            />
+          </div>
         </div>
       </div>
+      <div className="special-offers">
+        <div className="spc-center">
+          <div className="spc-heading">
+            <h2>Special Offers</h2>
+          </div>
+          <div className="spc1">
+            <Special
+              image={
+                "https://stat.mobicom.mn/resources/menu/1943-1421482791.png"
+              }
+              text={"Samsung Galaxy S21 FE"}
+            />
+            <Special
+              image={
+                "https://stat.mobicom.mn/resources/menu/1973-709829439.jpeg"
+              }
+              text={"Huawei Nova 9"}
+            />
+          </div>
+          <div className="spc1">
+            <Special
+              image={
+                "https://stat.mobicom.mn/resources/menu/1987-893058336.jpeg"
+              }
+              text={"ZTE Nubia Redmagic 6R"}
+            />
+            <Special
+              image={
+                "https://stat.mobicom.mn/resources/menu/2011-1351819088.png"
+              }
+              text={"Samsung Galaxy S22"}
+            />
+          </div>
+        </div>
+      </div>
+      <div className="Application">
+        <div className="app-heading">
+          <p>The apps that make your life easier</p>
+        </div>
+        <div className="app-apps">
+          <img
+            src={
+              "https://www.mobicom.mn/build/assets/93288a013385b9e712007b482d53dd9d.svg"
+            }
+          />
+          <img
+            src={
+              "https://www.mobicom.mn/build/assets/3e97249614785b49a444e1c3d8c338d9.svg"
+            }
+          />
+          <img
+            src={
+              "	https://www.mobicom.mn/build/assets/33687c97ee54c2ba35f8a3e31e856127.svg"
+            }
+          />
+          <img
+            src={
+              "https://www.mobicom.mn/build/assets/09d85c3a84ef7522bd8fc3fcfc243e78.svg"
+            }
+          />
+        </div>
+        <div className="app-names">
+          <p>Мобиком</p>
+          <p>monpay</p>
+          <p>VOO</p>
+          <p>Magic Voice</p>
+        </div>
+      </div>
+      <Footer/>
     </div>
   );
 }
 
 export default App;
 
-
-function Medee () {
+function Medee(props) {
+  const { img, text, date } = props;
   return (
-    <div className=""></div>
-  )
+    <div className="Medee">
+      <img src={img} />
+      <p>{text}</p>
+      <div>{date}</div>
+    </div>
+  );
+}
+function Special(props) {
+  const { image, text } = props;
+  return (
+    <div className="offers">
+      <img src={image} />
+      <h3>{text}</h3>
+    </div>
+  );
 }
