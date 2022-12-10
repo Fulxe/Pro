@@ -85,6 +85,6 @@ export default App;
 
 function Medee () {
   return (
-    <div className=""></div>
+    <div className="Medee"></div>
   )
 }
