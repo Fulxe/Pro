@@ -2,9 +2,20 @@
   margin: 0;
   padding: 0;
 }
+p:hover {
+  color: red;
+  cursor: pointer;
+}
+.con-text:hover {
+  color: red;
+  cursor: pointer;
+}
+h3:hover {
+  color: red;
+  cursor: pointer;
+}
 .App {
   width: 100%;
-  /* height: 100vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -92,7 +103,7 @@
   align-items: center;
 }
 .news {
-  width: 80%;
+  width: 60%;
   height: 60%;
   display: flex;
   flex-direction: column;
@@ -105,7 +116,13 @@
   align-items: center;
   justify-content: space-between;
 }
-.news-heading h4 {
+.news-news {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+h2 {
   font-size: 24px;
   color: red;
 }
@@ -124,7 +141,88 @@
   align-items: center;
 }
 .Medee {
+  width: 21%;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.Medee img {
   width: 100%;
+  border-radius: 10px;
+}
+.Medee p {
+  font-size: 18px;
+  font-weight: 500;
+}
+.special-offers {
+  width: 100%;
+  height: 79vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.spc-center {
+  width: 60%;
   height: 100%;
-  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.spc1 {
+  width: 100%;
+  height: 43%;
+  display: flex;
+  justify-content: space-between;
+}
+.offers {
+  width: 48%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.offers img {
+  width: 100%;
+  height: 80%;
+  border-radius: 10px;
+}
+.Application {
+  width: 100%;
+  height: 30vh;
+  margin-top: 20vh;
+  background: #f6f7f9;
+}
+.app-heading {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+
+  font-size: 24px;
+  font-weight: 500;
+  color: #040e3f;
+  padding: 40px 10px;
+}
+.app-apps {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+}
+.app-apps img {
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+}
+.app-names {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  gap: 63px;
+  font-size: 14px;
+  font-weight: 500;
 }
