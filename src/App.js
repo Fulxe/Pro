@@ -1,5 +1,4 @@
-import { ReactDOM, React } from "react";
-import logo from "./logo.svg";
+import  React  from 'react'
 import { Button } from "react-bootstrap";
 import "./App.css";
 import Sim from "./Components/Zurag/Screen Shot 2022-12-06 at 17.04.44.png";
